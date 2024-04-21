@@ -7,6 +7,7 @@ launchRepl :: String -> IO ()
 launchRepl "haskell" = callCommand "ghci"
 launchRepl "js" = callCommand "node"
 launchRepl "javascript" = callCommand "node"
+launchRepl "python" = callCommand "python3"
 launchRepl repl = error (repl ++ " not supported")
 
 main :: IO ()
